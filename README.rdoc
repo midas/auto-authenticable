@@ -1,0 +1,18 @@
+= Auto Authenticable Plugin
+
+Auto authenticable is a plugin that will automatically log you into your application when in development
+mode.
+
+
+= Usage
+
+In your controller:
+
+	include AutoAuthenticable
+	
+In the settings_dev.yml file, add your credentials and change the do_auto_login setting to true.  To turn 
+off auto login, simply put a false in this setting.  If the settings_dev.yml file is not present, the auto
+login feature will just return without doing anything.  If you are not running in development mode, the 
+auto login will also return without doing anything.
+
+It is still suggested that you remove the plugin before pushing to production.
