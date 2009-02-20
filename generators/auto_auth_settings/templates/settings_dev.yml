@@ -1,0 +1,4 @@
+development:
+  logged_in_user: 
+  logged_in_password: 
+  do_auto_login: false
