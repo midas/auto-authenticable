@@ -10,6 +10,10 @@ In your controller:
 
 	include AutoAuthenticable
 	
+To generate the settings file:
+
+	script/generate auto_auth_settings
+	
 In the settings_dev.yml file, add your credentials and change the do_auto_login setting to true.  To turn 
 off auto login, simply put a false in this setting.  If the settings_dev.yml file is not present, the auto
 login feature will just return without doing anything.  If you are not running in development mode, the 
